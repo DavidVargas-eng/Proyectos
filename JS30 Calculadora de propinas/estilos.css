@@ -1,0 +1,215 @@
+*{    margin: 0%;    padding: 0%;   }
+body{   
+    background-color: #C5E4E7;
+    height: 100vh;
+    font-family: 'Space Mono';
+}
+
+body,.principal,.aside_botones,.section_bill,.section_botones,.section_numberPeople,.aside_total,.section_numeros,.div,.div_tip,.section_boton{
+    display: flex;
+}
+
+.principal{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin: auto;
+    width: 920px;
+    height: 480px;
+    }
+
+.aside_botones{
+    width: 45%;
+    height: 420px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #5E6E6D;
+}
+
+input{
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 10px;
+    width: 95%;
+    height:50px;    
+    padding-left: 20px;
+}
+
+.input_bill{
+    background-image: url("images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 20px;
+}
+.input_bill:focus{
+    background-image: none;
+    border: solid #25C2AD;
+}
+
+.input_numberPeoples{
+    background-image: url("images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 20px;
+}
+.input_numberPeoples:focus{
+    background-image: none;
+    border: solid #25C2AD;
+}
+
+.section_bill{
+    width: 90%;
+    height: 99px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section_botones{
+    width: 90%;
+    height: 168px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button{
+    background-color: #00474B;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 20px;
+}
+button:hover{
+    background-color: #25C2AD;
+    color: #5E6E6D;
+}
+
+:focus{
+    outline: none;    
+}
+
+.custom{
+    padding: 0%;
+    width: 30%;
+    text-align: center;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 20px;
+    background-color: #EEEEEE;
+}
+.custom:focus{
+    border: solid #25C2AD;
+}
+.custom:hover{
+    background-color: #c9c8c8;
+}
+
+.txt_botones{    
+    width: 100%;   
+}
+
+.section_numberPeople{
+    width: 90%;
+    height: 99px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.aside_total{
+    background-color: #00474B;
+    border-radius: 20px;
+    width: 45%;
+    height: 420px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section_numeros{
+    width: 80%;
+    height: 160px;
+    flex-direction: column;
+}
+
+.div{
+    height: 80%;
+    width: 30%;
+    color: #FFFFFF;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.div_tip{
+    color: #26C2AD;
+   width: 100%;
+    height: 35%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_boton{
+    width: 80%;
+    height: 140px;
+}
+
+.boton_reset{
+    width: 100%;
+    background-color: #26C2AD;
+    align-self: flex-end;
+    color:#00474B;
+}
+
+.boton_reset:hover{
+    background-color: #9FE8DF;
+    color: #00474B;
+}
+
+.num_tip{
+    font-size: 50px;
+}
+.txt_person,.txt_person2{
+color: #5E6E6D;
+}
+
+@media screen and (max-width:500px) {        
+    .principal{
+        min-width: 300px;
+        width: 375px;
+        height: 790px;
+        flex-direction: column;
+    }
+
+    .aside_botones{
+        width: 95%;
+        height: 60%;
+    }
+
+    .aside_total{
+        width: 85%;
+        height: 35%;
+    }
+
+.section_numeros{
+        height: 160px;
+}
+
+.div{
+    font-size: 14px;
+    width: 50%;
+}
+
+.section_boton{
+    height: 60px;
+}
+
+.num_tip{
+    font-size: 30px;
+}    
+}

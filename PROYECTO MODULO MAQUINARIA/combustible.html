@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/estilosMain.css">
+    <link rel="stylesheet" href="src/opciones.css">
+    <link rel="shortcut icon" href="imagenes/iconoCombustible--activo.svg" type="image/x-icon">
+    <title>Combustible</title>
+</head>
+<body>
+    <main class="contenedorPrincipal">
+        <section class="bordes titulo">
+            <h1>COMBUSTIBLE</h1>
+            <img src="imagenes/iconoCombustible--activo.svg" alt="icono Control Maquinaria">
+        </section>
+        <section class="formulario">
+            <aside class="formulario__opciones">
+                <div class="bordes opciones__combustible--combustible pestaña--activa">
+                    <div class="indicadorEstadoFormulario"></div>
+                    <img src="imagenes/iconoCombustible--hover.svg" alt="iconoTarifas">
+                    <div class=" oculto indicadorEstadoFormulario"></div>
+                </div>
+                <div class="oculto invalida"></div>
+                <div class="oculto invalida"></div>
+                <div class="bordes invalida">
+                    <a href="index.html"><img src="imagenes/iconoVolver.svg" alt="icono volver"></a>
+                </div>
+            </aside>
+            <aside class="bordes formulario__datos">
+                <h3 class="input2T">Combustible</h3><p></p>
+                <h3 class="input2T">Tolerancias</h3>
+                <h3 class="input2T">Gal/Hr</h3>
+                <h3 class="input2T">Km/Gal</h3>
+                
+                <p class="input2T">Cantidades:</p>
+                <input type="text" class="input2" placeholder="0.00">
+                <input type="text" class="input2">
+                <p class="input2T">Capacidad del tanque</p>
+                <input type="text" class="input2">
+                <input type="text" class="input2">
+                <p class="input2T">Consumo conbustible libre</p>
+                <input type="text" class="input2">
+                <input type="text" class="input2">
+
+                <h3 class="input2T">Firma de obra</h3>
+                <h3 class="input2T">Rendimiento</h3>
+                <h3 class="input2T">Rendimiento GA/Hr</h3>
+
+                <input type="date" class="input2">
+                <input type="text" class="input2">
+                <input type="text" class="input2">
+                <div style="width: 100%;"><img style="width: 50px;" src="imagenes/guardar.svg" alt="guardar"></div>
+            </aside>
+            <section class="formulario__informacion"></section>
+        </section>
+    </main>
+    <script src="src/main.js" type="module"></script>
+</body>
+</html>

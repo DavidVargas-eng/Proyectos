@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/estilos.css">
+    <link href="https://fonts.googleapis.com/css2? family=Indie+Flower&family=Rosarivo&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagenes/fondoOscuro.svg" type="image/x-icon">
+    <title>Traductor</title>
+</head>
+<body>
+    <header class="contenedorFlotante titulo"><div class="menuMobil"></div> TRADUCTOR <div class="menuMobil" style="opacity:0;"></div></header>
+    <aside class="contenedorFlotante menu">
+        <div id="morse" class="opcionMenu">Codigo Morse</div>
+        <div id="textoMorse" class="opcionMenu subOpcionMenu">Texto a Morse</div>
+        <div id="morseTexto" class="opcionMenu subOpcionMenu">Morse a Texto</div>
+        <hr>
+        <div id="braile" class="opcionMenu">Sistema Braile</div>
+        <div id="textoBraile" class="opcionMenu subOpcionMenu">Texto a Braile</div>
+        <div id="braileTexto" class="opcionMenu subOpcionMenu">Braile a Texto</div>
+        <hr>
+        <div class="opciones">
+            <div id="modo" class="opcionMenu botonModoClaro"></div>
+            <div id="sonido" class="opcionMenu botonSonido"></div>
+        </div>
+    </aside>
+    <main class="contenedorFlotante principal">
+    </main>
+    <script src="src/main.js" type="module"></script>
+</body>
+</html>

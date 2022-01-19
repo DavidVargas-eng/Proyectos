@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/estilosMain.css">
+    <link rel="stylesheet" href="src/opciones.css">
+    <link rel="shortcut icon" href="imagenes/iconoMantenimientos.svg" type="image/x-icon">
+    <title>Mantenimientos</title>
+</head>
+<body>
+    <main class="contenedorPrincipal">
+        <section class="bordes titulo">
+            <h1>MANTENIMIENTOS</h1>
+            <img src="imagenes/iconoMantenimientos.svg" alt="icono Control Maquinaria">
+        </section>
+        <section class="formulario">
+            <aside class="formulario__opciones">
+                <div class="bordes opciones__mantenimientos--informacionMantenimientos">
+                    <div class="indicadorEstadoFormulario"></div>
+                    <a href="mantenimientos.html"><img src="imagenes/mantenimientos_medidores.svg" alt="iconoTarifas"></a>
+                    <div class=" oculto indicadorEstadoFormulario"></div>
+                </div>
+                <div class="bordes opciones__mantenimientos--medidores pestaña--activa">
+                    <div class="indicadorEstadoFormulario"></div>
+                    <a href="mantenimientos__medidores.html"><img src="imagenes/controlMaquinaria__medidores.svg" alt="iconoTarifas"></a> 
+                    <div class=" oculto indicadorEstadoFormulario"></div>
+                </div>
+                <div class="oculto invalida"></div>
+                <div class="bordes opciones__volver">
+                    <a href="index.html"><img src="imagenes/iconoVolver.svg" alt="icono volver"></a>
+                </div>
+            </aside>
+            <aside class="bordes formulario__datos">
+                <h3>Información de mantenimiento</h3><p></p>
+                <p>Ciclo anterior O.T.</p>
+                <input type="text" class="input" placeholder="0.00">
+                <p>Medida anterior O.T.</p>
+                <input type="text" class="input" placeholder="0.00 hr">
+                <p>Acumulado anterior O.T.</p>
+                <input type="text" class="input" placeholder="0.00 hr">
+                <h3>* Equipos controlados por fechas, solo cargan rutinas de mantenimiento configuradas por dias en su primer medidor</h3>
+                <div style="width: 100%;"><img style="width: 50px;" src="imagenes/guardar.svg" alt="guardar"></div>
+
+            </aside>
+            <section class="formulario__informacion"></section>
+        </section>
+    </main>
+    <script src="src/main.js" type="module"></script>
+</body>
+</html>

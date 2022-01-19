@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/estilosMain.css">
+    <link rel="stylesheet" href="src/opciones.css">
+    <link rel="shortcut icon" href="imagenes/iconoTarifas.svg" type="image/x-icon">
+    <title>Tarifas</title>
+</head>
+<body>
+    <main class="contenedorPrincipal">
+        <section class="bordes titulo">
+            <h1>TARIFAS</h1>
+            <img src="imagenes/iconoTarifas.svg" alt="icono Control Maquinaria">
+        </section>
+        <section class="formulario">
+            <aside class="formulario__opciones">
+                <div class="bordes opciones__tarifas--tarifas pestaña--activa">
+                    <div class="indicadorEstadoFormulario"></div>
+                    <img src="imagenes/iconoTarifas--hover.svg" alt="iconoTarifas">
+                    <div class=" oculto indicadorEstadoFormulario"></div>
+                </div>
+                <div class="oculto invalida"></div>
+                <div class="oculto invalida"></div>
+                    <div class="bordes opciones__volver">
+                        <a href="index.html"><img src="imagenes/iconoVolver.svg" alt="icono volver"></a>
+                    </div>
+            </aside>
+            <aside class="bordes formulario__datos">
+                <h3>Tarifas</h3><p></p>
+                <p>Fecha inicio alquiler</p>
+                <input type="date" class="input">
+                <p>Insumo de costo</p>
+                <input type="text" class="input">
+                <p>Tarifa</p>
+                <input type="text" class="input" placeholder="0.00">
+                <p>Stand by mes</p>
+                <input type="text" class="input" placeholder="0.00">
+                <p>Obra alquiler</p>
+                <input type="text" class="input">
+                <p>Cobro diario</p>
+                <div class="inputdiv"><img id="btnTarifas" class="boton" src="imagenes/botonNo.svg" alt="botonNo"></div>
+                <p>Valor tarifa diaria</p>
+                <input type="text" class="input dis" placeholder="0.00" disabled>
+                <p>Stand by mes (dia)</p>
+                <input type="text" class="input dis" placeholder="0.00" disabled>
+                <p>Insumo alquiler</p>
+                <input type="text" class="input">
+                <h3>Los campos con * son obligatorios.</h3>
+                <div style="width: 100%;"><img style="width: 50px;" src="imagenes/guardar.svg" alt="guardar"></div>
+
+            </aside>
+            <section class="formulario__informacion"></section>
+        </section>
+    </main>
+    <script src="src/main.js" type="module"></script>
+</body>
+</html>

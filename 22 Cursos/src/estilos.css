@@ -1,0 +1,154 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:focus{
+    outline: none;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 10% 90%;
+}
+
+.bordes{
+    border:2px solid #C7C7C7;
+}
+
+.menuSuperior{
+    grid-column: 1/3;
+    box-shadow: 0 3px 7px #C7C7C7;
+}
+
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{
+    background-color: #f8f8f8;
+}
+
+.dashboard{
+    border-radius: 15px;
+}
+
+.dashboard h3{
+    border-bottom: 2px solid #C7C7C7;
+}
+
+.contenedor{
+    border-radius: 15px 0 15px 15px ;
+}
+
+.dashboard, .principal{
+    justify-self: center;
+    align-self: center;
+    width: 95%;
+    height: 95%;
+    display: grid;
+    grid-template-rows: 8%;
+}
+
+.encabezado h3{
+    width: 100%;
+}
+
+.encabezado{
+    direction: rtl;
+    display: flex;
+}
+
+.encabezado__pestañas{
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.pestañas--item{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-left: 2px solid #C7C7C7;
+}
+
+.encabezado__pestañas div *{
+    margin: 0 20px 0 20px;
+}
+
+.encabezado__pestañas div:hover{
+    background-color: var(--colorTemaHover);
+}
+
+.encabezado__pestañas div input{
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    direction: ltr;
+    padding-left: 10px;
+}
+
+.contCursos{
+    overflow-y: scroll;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}.contCursos::-webkit-scrollbar{
+    width: 5px;
+}.contCursos::-webkit-scrollbar-thumb{
+    background-color: var(--colorTema);
+    border-radius: 10px;
+}
+
+:root{
+    --colorTema: #008000;
+    --colorTemaHover: #D1F0D1;
+}
+
+.tarjetaCurso{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-left:5px solid var(--colorTema);
+    background-color: #FFF;
+    box-shadow: 0 0 10px#C7C7C7;
+    margin-bottom: 20px;
+    width: 30%;
+    height: 200px;
+}.tarjetaCurso:hover{
+    background-color: #D1F0D1;
+}
+
+.tarjetaCurso img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+.pestañas--item div{
+    display: flex;
+    align-items: center;
+}
+button{
+    border-radius: 0 5px 5px 0;
+    background-image: url('../imagenes/iconoBuscar--blanco.svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: var(--colorTema);
+    border: none;
+    border-right: 2px solid #C7C7C7;
+    width: 25px;
+    height: 21px;
+    position: absolute;
+}button:hover{
+    cursor: pointer;
+}

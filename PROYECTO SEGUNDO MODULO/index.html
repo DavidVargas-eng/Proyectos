@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&family=Rosarivo&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Modulo SGD</title>
+</head>
+<body>
+    <header>
+    <h1 class="tituloPrincipal">ACTIVIDADES PENDIENTES</h1>
+    <section class="filtroPrincipal">
+        <select class="filtroPrincipal__input input--bordes"></select>
+        <img src="imagenes/icono_ayuda.svg" alt="icono ayuda">
+        <button class="boton boton__filtroPrincipal"><h3>Consultar</h3></button>
+    </section>
+    <section class="contenedor--bordes visorFiltros"></section>
+    </header>
+    <main>
+        <aside class="contenedor--sombras asideResultados">
+            <section class="contenedor--bordes asideResultados__filtro">
+                <div class="filtro__filtrarId">
+                    <input class="input__filtroId input--bordes" type="text">
+                    <button class="boton boton__filtroId"></button>
+                </div>
+                <div class="filtro__controles">
+                    <img src="imagenes/iconoPrimerPagina.svg" alt="iconoPrimerPagina" class="filtro__controles--item">
+                    <img src="imagenes/iconoPaginaAnterior.svg" alt="iconoPaginaAnterior" class="filtro__controles--item">
+                    <h3>5</h3>
+                    <img src="imagenes/iconoPaginaSiguiente.svg" alt="iconoPaginaSiguiente" class="filtro__controles--item">
+                    <img src="imagenes/iconoUltimaPagina.svg" alt="iconoUltimaPagina" class="filtro__controles--item">
+                    <img src="imagenes/iconoCompartir.svg" alt="iconoCompartir" class="filtro__controles--item">
+                </div>
+            </section>
+            <section class="contenedor--bordes asideResultados__resultados">
+                <section id="scrollTarjetas" class="scroll"></section>
+            </section>
+        </aside>
+        <section class="sectionInformacion">
+            <section class="sectionInformacion__informacion">
+                <section class="contenedor--bordes visorDatosActividad"></section>
+                <section class="contenedor--bordes visorAdjuntos"></section>
+            </section>
+            <section class="sectionInformacion__pestañas">
+                <section class="pestañas">
+                    <div id="Observaciones" class="pestañas__opcion contenedor--bordes pestañas__opcion--activa"><h5>Observaciones</h5></div>
+                    <div id="Descriptores" class="pestañas__opcion contenedor--bordes"><h5>Descriptores</h5></div>
+                    <div id="Respuesta" class="pestañas__opcion contenedor--bordes"><h5>Respuesta</h5></div>
+                    <div id="Agregar" class="pestañas__opcion contenedor--bordes"><h5>Agregar documentos</h5></div>
+                    <div id="Asociación" class="pestañas__opcion contenedor--bordes"><h5>Asociación actas y entradas</h5></div>
+                </section>
+                <section class="contenedor--bordes contenedor--sombras areaTrabajo">
+                    <section class="observaciones">
+                        <aside class="observaciones__formulario">
+                        <h1>OBSERVACIONES</h1>
+                        <strong>VER SEGUIMIENTOS<img id="seguimientos" src="imagenes/iconoSeguimientos.svg"></strong>
+                        <strong>REASIGNAR<img src="imagenes/iconoReasignar"></strong>
+                        <div>
+                        <strong>Observaciones:</strong>
+                        <textarea class="input--bordes" rows="10" placeholder="Máximo 2.500 caracteres."></textarea>
+                        </div>
+                        <strong>Actividad:</strong>
+                        <p>(2) Revisar concepto y valor</p>
+                        <strong>Usuario:</strong>
+                        <select class="input--bordes">
+                            <option>Raul Suarez</option>
+                            <option>Hellen Umañana</option>
+                            <option>Monica Rodriguez</option>
+                            <option>Lorena Cardenas</option>
+                            <option>Admin Sincosoft</option>                        
+                        </select>
+                        <strong>Acción:</strong>
+                        <select class="input--bordes">
+                            <option>Completar</option>
+                            <option>Cancelar</option>
+                            <option>Rechazar</option>
+                        </select>
+                        <button class="boton boton--ejecutarActividad">Ejecutar actividad</button>
+                        </aside>
+                    </section>
+                </section>
+    </main>
+    <script src="src/script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="headerTitulo">
+        Generación de facturas
+        <img src="imagenes/ico_informacion.svg" alt="ico_informacion">
+    </header>
+    <aside class="asideBusqueda">
+        <div class="fondoTitulo">Buscar órdenes de facturación</div>
+        <section class="sectionCalendarios">
+            <div class="divFechaInicio">            
+                <img src="imagenes/ico_calendario.svg" alt="imagencalendario">
+                <div class="aux">
+                    <p>Fecha inicial</p>
+                    <input id="fechaInicio" type="date" class="inputFecha">
+                </div>
+            </div>
+            <div class="divFechaFinal">
+                <img src="imagenes/ico_calendario.svg" alt="imagencalendario">
+                <div class="aux">
+                    <p>Fecha final</p>
+                        <input id="fechaFinal" type="date" class="inputFecha">
+                </div>
+            </div>
+        </section>
+        <section class="sectionOtrosFiltros">
+            <div id="orden" class="divOrden">
+                <img src="imagenes/ico_ordenFacturacion.svg" alt="ico_orden">
+                <div class="aux">
+                    <p>Orden de facturación</p>
+                    <input class="ordenFacturacion" type="number" placeholder="Número de orden de facturación">
+                </div>
+            </div>
+            <div id="cliente" class="divCliente">
+                <img src="imagenes/ico_cliente.svg" alt="ico_cliente">
+                <div class="aux">
+                    <p>Cliente</p>
+                    <input class="cliente" type="number" placeholder="Buscar el cliente">
+                </div>
+            </div>
+            <div id="modelo" class="divModelo">
+                <img src="imagenes/ico_modeloNegocio.svg" alt="ico_modelo">
+                <div class="aux">
+                    <p>Modelo de negocio</p>
+                    <input type="text" class="ModeloNegocio" placeholder="Buscar el modelo de negocio">
+                </div>
+            </div>
+            <div id="moneda" class="divMoneda">
+                <img src="imagenes/ico_moneda.svg" alt="ico_moneda">
+                <div class="aux">
+                    <p>Moneda</p>
+                    <select id="tipoMoneda"></select>
+                </div>
+            </div>
+        </section>
+        <button class="btnFiltrar">Filtrar</button>
+        <button class="btnConsultar">Consultar</button>
+        <button class="btnGenerar inactivo">Generar</button>
+    </aside>
+    <aside class="asideRespuesta">
+        <div class="fondoTitulo">Órdenes de facturación</div>
+        <div class="scroll"></div>
+    </aside>
+    <div class="body2"></div>
+    <div class="principal">
+        <div class="titulo">Órdenes de facturación procesadas
+            <img class="ico_cerrar" src="imagenes/ico_cerrar.svg">
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

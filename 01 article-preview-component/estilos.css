@@ -1,0 +1,188 @@
+body {
+    background-color: #EDF2F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.contenido {
+    box-shadow: 10px 15px 20px #b4b4b4;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.contenedor {
+    padding-right: 40px;
+    display: flex;
+    background-color: #ffffff;
+    width: 730px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.contenedor_imagen {
+    margin-right: 50px;
+    border-radius: 20px 0 0 20px;
+    width: 280px;
+    height: 280px;
+    background-image: url("images/drawersrecortada.jpg");
+}
+
+.contenedor_texto {
+    margin-left: 20px;
+    display: flex;
+    text-align: left;
+}
+
+.ico_avatar {
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.iconos {
+    display: flex;
+}
+
+.inactivo {
+    margin-top: 20px;
+    margin-left: 35%;
+    border-radius: 50%;
+    width: 32x;
+    height: 32px;
+}
+
+
+.parrafo {
+    line-height: 18px;
+    color: #545C6F;
+    margin-top: 30px;
+    align-self: center;
+    width: 332px;
+}
+
+.titulo{
+    font-size: 20px;
+}
+
+
+.par {
+    margin-top: 28px;
+    width: 175px;
+}
+
+.activo{
+    display: none;
+    position: relative;
+    margin-top: -35px;
+    margin-left: 35%;
+}
+
+.barra_compartir{
+    display: none;
+}
+.burbuja_compartir{
+    width: 200px;
+    display: none;
+    position: relative;
+    margin-left: 0px;
+    top: -120px;
+    right: -1px;
+}
+.compartir:hover .burbuja_compartir{
+   display: block;
+   border-style: solid;
+}
+
+
+
+.compartir:hover .activo{
+    display: block;
+}
+
+
+
+@media screen and (max-width: 730px) {
+    body {
+        font-size: 13.7px;
+        font-family: 'Manrope', sans-serif;
+        width: 100vh;
+        height: 100vh;
+    }
+
+    .contenedor {
+        align-items: center;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 327px;
+        height: 512px;
+    }
+
+    .contenido {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 10px 15px 20px #b4b4b4;
+        width: 327px;
+        height: 512px;
+    }
+
+    .contenedor_imagen {
+        margin-right: 0;
+        margin-bottom: 20px;
+        border-radius: 20px 20px 0 0;
+        width: 327px;
+        height: 200px;
+        background-image: url("images/drawers_mobile.jpg");
+    }
+
+    .inactivo {
+        margin-top: 30px;
+        margin-left: -3px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .ico_avatar {
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .titulo{
+        font-size: 15.5px;
+    }
+
+    .activo{
+        display: none;
+        position: relative;
+        margin-top: -35px;
+        margin-left: -4px;
+    }
+
+   .barra_compartir{
+       display: none;
+   }
+
+   .compartir:hover .burbuja_compartir{
+    display: none;
+}
+
+    .parrafo {
+        margin-top: 0px;
+        line-height: 18px;
+        margin-left: 10px;
+        width: 260px;
+    }
+
+    
+}

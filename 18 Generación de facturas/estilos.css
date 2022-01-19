@@ -1,0 +1,306 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F5FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 310px;
+    height: 100vh;
+}
+
+.headerTitulo{
+    width: 100%;
+    height: 60px;
+    background-color: #FFF;
+    padding: 0 20px 0 20px;
+    color: #262626;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside{
+    width: 98%;
+    background-color: #FFF;
+    margin: 7px auto 7px auto;
+    border-radius: 10px;
+}
+
+.asideBusqueda{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.asideRespuesta{
+    background-image: url('imagenes/fondo_inferior.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fondoTitulo{
+    border-radius: 10px 10px 0 0;
+    background-color: #113D72;
+    font-size: 16px;
+    width: 100%;
+    height: 37px;
+    color: #FFF;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    font-weight: 600;
+    margin: 0%;
+}
+
+section{
+    min-width: 285px;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionCalendarios{
+    width: 55%;
+}
+
+.sectionOtrosFiltros{
+    width: 80%;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    height: 64px;
+    width: 300px;
+    margin: 7px;
+    justify-content: space-between;
+}
+
+.btnConsultar,.btnFiltrar,.btnGenerar{
+    margin: auto auto 10px auto;
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    height: 37px;
+    background-image: url('');
+    background-color: #2267A0;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btnConsultar:hover{
+    background-color: #3f91d4;
+}
+.btnFiltrar:hover{
+    background-color: #3f91d4;
+}
+.btnGenerar:hover{
+    background-color: #3f91d4;
+}
+.btnFiltrar,.btnGenerar{
+    display: none;
+}
+.inactivo{
+    background-color: gray;
+}
+.inactivo:hover{
+    background-color: gray;
+}
+.aux{
+    width: 80%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+p{
+    color: #4C414F;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+:focus{
+    outline: none;
+}
+
+input,select{
+    border: 1px solid #DDE1E4;
+    width: 100%;
+    height: 23px;
+    border-radius: 5px;
+}
+
+.inputCliente,.inputModeloNegocio{
+    background-image: url('imagenes/ico_lupaBuscar.svg');
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: center;
+    padding-left: 25px;
+}
+
+.fondoCarga{
+    background-color: #838383;
+    opacity: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    min-width: 310px;
+}
+
+.externo{
+    width: 240px;
+    height: 240px;
+    background-image: url('imagenes/ico_cargaExterior.svg');
+    animation:rotarL 2s infinite linear;
+}
+.interno{
+    width: 210px;
+    height: 210px;
+    background-image: url('imagenes/ico_cargaInferior.svg');
+    animation:rotarR 1s infinite linear;
+}
+.externo,.interno{
+    transform-origin: center;
+    display: flex;
+    align-self: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inputFecha::-webkit-calendar-picker-indicator{
+    background-image: url('imagenes/ico_añadirCalendarioFondo.svg');
+    background-size: 25px;
+    background-position-y: -6px ;
+    background-position-x: -5px;
+}
+
+@keyframes rotarL {
+    100%{transform: rotate(-360deg);}
+}
+@keyframes rotarR {
+    100%{transform: rotate(360deg);}
+}
+
+.scroll{
+    width: 100%;
+    height:fit-content;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    background-color: #FFF;
+    align-self: center;
+    padding: 25px;
+    display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button{ 
+  -webkit-appearance: none; 
+}
+
+.tabla{
+    width: 150%;
+    border-spacing: 0px;
+    padding-right: 20px;
+}
+td,th{
+    min-width: 30px;
+    border-top: 2px solid #EBEBEB;
+}
+td{
+    padding-left: 15px;
+    height: 10px;
+}
+.celdaFecha{
+    width: 200px;
+}.celdaCliente,.celdaNegocios{
+    width: 300px;
+}.celdaDescripcion{
+    width: 500px;
+}
+
+.ico_documentos{
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formaPago{
+    width: 150px;
+}
+
+.divCheck{
+    width: 23px;
+    height: 23px;
+    background-size: cover;
+}
+.divCheck{
+    background-image: url('imagenes/ico_checkInactive.svg');
+}
+.divChecked{
+    background-image: url('imagenes/ico_checkactive.svg');
+}
+
+.body2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    opacity: 50%;
+    display: none;
+}
+
+.principal{
+    position: absolute;
+    width: 800px;
+    height: fit-content;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #838383;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    align-self: flex-start;
+    margin: 0%;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.ico_cerrar{
+    width: 20px;
+}
+
+.tabla2{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.cambio_moneda{
+    width: 150px;
+}

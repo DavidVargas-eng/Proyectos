@@ -1,0 +1,149 @@
+body{
+    background-color: #FAFAFA;
+    font-family: 'Poppins';
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;    
+    color: #929197;
+}
+
+.titulo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    width: 1110px;
+}
+
+.texto_titulo{
+    font-size: 36px;
+    margin: 0px;
+}
+
+#sub{color: #333637;}
+
+.texto_encabezado{
+    margin: 0px;
+    margin-top: 20px;
+    color: #929197;
+    width: 470px;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.tit_cuadros{
+    color: #333637;
+    position: relative;
+    font-size: 20px;
+    top: 40px;
+    left: 30px;
+}
+
+.texto_cuadros{
+    width: 255px;
+    position: relative;
+    left: 30px;
+    top: 50px;
+}
+
+.contenedor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 1110px;
+    height: 530px;    
+}
+
+.icono{
+position: absolute;
+width: 64px;
+bottom: 30px;
+right: 30px;}
+
+.linea{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.tarjeta{
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #DDE5F0;
+    background-color: #FFFFFF;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 250px;    
+}
+
+#t1{align-self: center;
+    left: 0px;}
+
+#t2{top: 0px;}
+
+#t3{bottom: 0px;}
+
+#t4{align-self: center;
+    right: 0px;}
+
+@media screen and (max-width:800px) {
+
+.contenedor{
+    width: 311px;
+    height: 960px;
+    flex-direction: column;
+}
+
+.titulo{width: 311px;
+margin-top: 30px;}
+
+.texto_titulo{
+    font-size: 24px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.texto_encabezado{width: 270px;
+margin-bottom: 40px;
+margin-top: 20px;
+}
+
+.tarjeta{
+    position: relative;
+    flex-direction: column;
+    width: 311px;
+    height: 222px;    
+    margin-bottom: 25px;
+}
+
+.tit_cuadros{
+    top: 30px;
+    left: 30px;
+}
+
+.texto_cuadros{
+    left: 30px;
+    top: 20px;
+}
+
+#t1{left: 0;}
+
+#t2{left: 0px;}
+
+#t3{left: 0px;}
+
+#t4{left: 0px;}
+
+.icono{
+    width: 57px;
+    bottom: 26px;
+    right: 26px;}    
+
+.linea{width: 311px;}
+
+}

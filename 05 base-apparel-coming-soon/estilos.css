@@ -1,0 +1,150 @@
+body{
+    padding: 0px;
+    height: 99.7vh;
+    background-color: #FFF7F8;
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    color: #C49899;
+}
+
+.principal{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo{
+    top: 155px;
+    color: #C49899;
+    font-size: 63px;    
+}
+
+.subtitulo{
+    top: 230px;
+    color: #373131;
+    font-size: 66px;
+    line-height: 80px;
+}
+
+.texto{
+    top: 395px;
+    line-height: 25px;
+}
+
+.izquierdo{
+    left: 17%;
+    top: 10%;
+    align-content: left;
+    flex-direction: column;
+    width: 446px;
+    height: 572px;
+}
+
+input{
+    display: flex;
+    border-radius: 28px;
+    border-style: solid;
+    border-color: #E7DDDE;
+    background-color: transparent;
+    height: 56px;
+    width: 411px;
+    bottom: 0px;
+    padding-left: 30px;
+}
+
+.boton{
+    right: -41px;
+    bottom: -56px;
+    height: 140px;
+}
+
+.cont_imagen{
+    height: 100%;
+    top: 0px;
+    right: 0px;
+}
+
+:invalid{border-color: red;}
+
+:focus{outline: none;}
+
+.logotipo{width: 158px;}
+
+.absolute{position: absolute;}
+
+.margen{margin: 0px;}
+
+@media screen and (max-width:750px) {
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .principal{
+        align-self: center;
+        width: 375px;
+        height: 800px;
+    }
+
+    .titulo{
+        top: 155px;
+        font-size: 39px;    
+    }
+
+    .subtitulo{
+        top: 230px;
+        font-size: 41px;
+        line-height: 50px;
+    }
+    
+    .texto{
+        top: 395px;
+        font-size: 14px;
+    }
+
+    input{
+        border-radius: 24px;
+        height: 48px;
+        width: 282px;
+    }
+
+    .cont_imagen{
+        top: 85px;
+        width: 375px;
+        height: 250px;
+    }
+
+    .izquierdo{
+        left: 33px;
+        top: 0px;
+        width: 313px;
+        height: 800px;
+    }
+
+    .boton{
+        right: -43px;
+        bottom: -56px;
+    height: 132px;
+    }
+
+    .titulo{
+        top: 400px;
+        left: 90px;
+        font-size: 39px;    
+    }
+
+    .subtitulo{
+        top: 440px;
+        font-size: 41px;
+    }
+
+    .texto{
+        top: 540px;
+        font-size: 14px;
+    }
+
+    .logotipo{width: 100px;}
+
+    .centrar_texto{text-align: center;}
+
+}

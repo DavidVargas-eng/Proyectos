@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #E6EFF6;
+    height: 100vh;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+}
+.flex {
+    display: flex;
+}
+.j_evently {
+    justify-content: space-evenly;
+}
+.a_center {
+    align-items: center;
+}
+.w_encabezado {
+    width: 90%;
+}
+.w_inferior {
+    width: 85%;
+}
+.texto2 {
+    font-size: 15px;
+}
+.titulo2 {
+    font-size: 18px;
+}
+.titulo3 {
+    font-size: 18px;
+}
+.boton:hover {
+    background-color: #d7f066;
+}
+:root {
+    --t50a33: 50%;
+    --t100a50: 100%;
+    --t50a100: 50%;
+    --t50a66: 50%;
+    --direccion: row;
+    --l23a20: 23px;
+    --l16a15: 16px;
+}
+.contenedor {
+    align-self: center;
+    width: 635px;
+    height: 475px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgb(179, 179, 179);
+}
+.encabezado {
+    border-radius: 10px 10px 0 0;
+    height: var(--t50a33);
+    background-color: #FFFFFF;
+    flex-direction: column;
+}
+.titulo {
+    color: #499A9D;
+    font-size: var(--l23a20);
+}
+.subtitulo {
+    line-height: 25px;
+    color: #C4D962;
+    font-size: var(--l16al5);
+}
+.texto {
+    line-height: 30px;
+    color: #AFAFB9;
+    font-size: var(--l16a15);
+}
+.doble {
+    color: #FFFFFF;
+    flex-direction: var(--direccion);
+    height: var(--t50a66);
+}
+.precio {
+    border-radius: 0 0 0 10px;
+    width: var(--t50a100);
+    height: var(--t100a50);
+    background-color: #2BB3B1;
+    flex-direction: column;
+}
+.t29 {
+    color: #FFFFFF;
+    font-size: 33px;
+}
+.textprecio {
+    color: #74E8E5;
+    font-size: 16px;
+}
+.porque {
+    flex-direction: column;
+    border-radius: 0 0 10px 0;
+    width: var(--t50a100);
+    height: var(--t100a50);
+    background-color: #4ABEBD;
+}
+.texto3 {
+    line-height: 20px;
+    font-size: 14px;
+}
+.boton {
+    font-weight: bolder;
+    color: #FFFFFF;
+    height: 48px;
+    background-color: #BFDF32;
+    border-style: none;
+    border-radius: 5px;
+}
+@media screen and(max-width:430px) {
+    .precio {
+        border-radius: 0;
+    }
+    .porque {
+        border-radius: 0 0 10px 10px;
+    }
+    :root {
+        --t50a33: 40%;
+        --t100a50: 50%;
+        --t50a100: 100%;
+        --t50a66: 60%;
+        --direccion: column;
+        --l23a20: 20px;
+        --l16a15: 15px;
+    }
+    .contenedor {
+        width: 311px;
+        height: 722px;
+    }
+}

@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:focus {
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    background-color: #F8F8F8;
+    display: flex;
+    min-width: 500px;
+}
+
+aside {
+    background-color: #FFF;
+}
+
+.asideScroll {
+    width: 30%;
+    min-width: 237px;
+}
+
+.sectionTitulos {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.imgLogotipo {
+    width: 50px;
+    height: 50px;
+}
+
+.aux {
+    width: 70%;
+}
+
+.textoTitulo {
+    height: 27px;
+    font-size: 27px;
+    font-weight: 900;
+    color: #525252;
+}
+
+.textoSubtitulo {
+    height: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3871A7;
+}
+
+.sectionBusqueda {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.textoAcceso,
+.inputBusqueda {
+    width: 90%;
+}
+
+.textoAcceso {
+    font-size: 25px;
+    font-weight: 900;
+    color: #464646;
+}
+
+.inputBusqueda {
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #C0C0C0;
+    padding-left: 15px;
+}
+
+.sectionScroll {
+    height: 70%;
+    overflow-y: scroll;
+}
+
+.divScroll {
+    padding: 0 10px 0 18px;
+}
+
+.divElemento {
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    font-size: 18px;
+    height: 35px;
+    align-items: center;
+}
+
+.divElemento:hover {
+    background-color: #DEEAFF;
+    border-radius: 0 15PX 15px 0;
+}
+
+.descripcion {
+    color: #454545;
+}
+
+.cantidad {
+    color: #8E8E8E;
+}
+
+.asideResultados {
+    margin: auto;
+    width: 67%;
+    height: 90%;
+    box-shadow: 0 0 7px rgb(95, 95, 95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px 0;
+}
+
+.imagenFondo {
+    width: 55%;
+}
+
+.textoFondo {
+    font-size: 30px;
+    color: #7B7B7B;
+    text-align: center;
+    font-weight: 100;
+}
+
+.scrollResultados {
+    width: 100%;
+    height: 95%;
+    overflow-y: scroll;
+}
+
+.scrollResultados::-webkit-scrollbar {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    font-size: 18px;
+}
+
+th {
+    border-top: 2px solid #a1a1a1;
+    border-bottom: 2px solid #a1a1a1;
+    line-height: 50px;
+    min-width: 20px;
+    height: 25px;
+    text-align: left;
+}
+
+td {
+    color: #3b3b3b;
+    font-weight: 300;
+    height: 35px;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+}
+
+.divmarcar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.marcar:hover,
+.desmarcar:hover,
+.divElemento:hover {
+    cursor: pointer;
+}

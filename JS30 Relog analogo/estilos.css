@@ -41,7 +41,7 @@ div{
     border: dashed rgb(180, 180, 180);
     border-radius: 50%;
     height: 100%;
-    transform: translateY(-3px); /* account for the height of the clock hands */
+    transform: translateY(-3px);
   }
 
 p{

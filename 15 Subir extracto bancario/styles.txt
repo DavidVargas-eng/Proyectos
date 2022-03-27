@@ -1,3 +1,0 @@
-font-family: Calibri, Arial;
-Color: #667788
-Frame: 1200 x 500

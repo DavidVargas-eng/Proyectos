@@ -1,3 +1,0 @@
-Font: Segoe UI
-Color: #4C88B5
-Frame: 1428 x 950
